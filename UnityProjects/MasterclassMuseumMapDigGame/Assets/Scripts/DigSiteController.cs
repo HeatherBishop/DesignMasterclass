@@ -19,7 +19,7 @@ public class DigSiteController : MonoBehaviour {
     public void UpdateSprite()
     {
         transform.localScale = myArtifact.scale;
-        myRenderer.sprite = myArtifact.image;
+        myRenderer.sprite = myArtifact.sprite;
     }
 
     public void ResetSprite()

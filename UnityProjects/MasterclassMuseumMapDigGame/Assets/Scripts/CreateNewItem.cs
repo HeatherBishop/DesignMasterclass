@@ -6,7 +6,7 @@ public class CreateNewItem : ScriptableObject {
 
     public string itemName;//name of artifact
     public Vector2 position;//position in world space
-    public Sprite image;//sprite to render
+    public Sprite sprite;//sprite to render
     public Vector2 scale;//scale of image
 
 
@@ -18,6 +18,4 @@ public class CreateNewItem : ScriptableObject {
     public int correctAnswer;
     [TextArea]
     public string itemInfo;//info given about artifact
-
-
 }
