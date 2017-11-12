@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +13,7 @@ public class CharController : MonoBehaviour {
     public static float timelineMaxY;
 
     [HideInInspector]
-    public CharacterCreation myCharacter;
+    public CharacterCreation CharInfo;
 
     bool onMe = false;
 
@@ -25,9 +25,12 @@ public class CharController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0) && onMe)
+        if (Input.GetMouseButton(0))
         {
-            transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if (onMe)
+            {
+                transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            }
         }
 
         if (Input.GetMouseButtonUp(0))
@@ -70,7 +73,7 @@ public class CharController : MonoBehaviour {
 
     bool CheckXPos()//Check if in right place
     {
-        if (Mathf.Abs(transform.position.x - YearToXPos(myCharacter.year)) > 0.5)//close enough. 0.5 is arbitrary at this point
+        if (Mathf.Abs(transform.position.x - YearToXPos(CharInfo.year)) > 0.5)//close enough. 0.5 is arbitrary at this point
             return true;
         else { return false; }
     }

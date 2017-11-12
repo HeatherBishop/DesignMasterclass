@@ -1,9 +1,12 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(fileName = "New Character", menuName = "Create a Character")]
-public class CharacterCreation : ScriptableObject {
+public class CharacterCreation : ScriptableObject
+{
+
     public string characterName;//name of character
+    public string MapLocation;//location in ipswich
     public Vector2 position;//position in world space
     public Sprite sprite;//sprite to render
     public Vector2 scale;//scale of image
