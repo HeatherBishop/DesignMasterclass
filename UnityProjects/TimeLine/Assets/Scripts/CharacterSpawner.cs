@@ -19,8 +19,9 @@ public class CharacterSpawner : MonoBehaviour {
         }
 	}
 
-    private void ResetCharacters()
+    public void ResetCharacters()
     {
+        TimelineManager.Instance.currentCorrectAnswers = 0;
         foreach (CharController character in ControlList)
         {
             character.ResetCharacter();

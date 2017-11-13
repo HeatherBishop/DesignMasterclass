@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: TestChar1
   MapLocation: IP2
-  position: {x: 1.5, y: 3.4}
+  position: {x: -2, y: -4}
   sprite: {fileID: 21300000, guid: f2a419dd66cc8ca4a8f6d45caaf4a7a7, type: 3}
   scale: {x: 1, y: 1}
-  year: 1980
-  itemInfo: This character is a test
+  year: 1842
+  itemInfo: 1842 (For testing purposes)
