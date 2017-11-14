@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DigSiteController : MonoBehaviour {
-    CameraController Cam;
+    public MapScriptCameraMovement CamMovement;
     public CreateNewItem myArtifact;
     SpriteRenderer myRenderer;
     Sprite OriginalSprite;
@@ -14,11 +14,12 @@ public class DigSiteController : MonoBehaviour {
         myRenderer = GetComponent<SpriteRenderer>();
         OriginalSprite = myRenderer.sprite;
         OriginalScale = new Vector2(transform.localScale.x,transform.localScale.y);
+        CamMovement = FindObjectOfType<MapScriptCameraMovement>();
     }
 
     public void UpdateSprite()
     {
-        transform.localScale = myArtifact.scale;
+        transform.localScale = new Vector3(myArtifact.scale.x,myArtifact.scale.y,1);
         myRenderer.sprite = myArtifact.sprite;
     }
 
@@ -37,6 +38,6 @@ public class DigSiteController : MonoBehaviour {
     {
         UpdateSprite();
         StartCoroutine(UpdateUI(myArtifact));
-        Cam.enabled = false;
+        CamMovement.enabled = false;
     }
 }
