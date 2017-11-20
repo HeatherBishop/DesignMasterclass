@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\ArtifactController.cs" />
     <Compile Include="Assets\Scripts\ArtifactPlacer.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\CanvasController.cs" />
     <Compile Include="Assets\Scripts\CreateNewItem.cs" />
     <Compile Include="Assets\Scripts\DigSiteController.cs" />
     <Compile Include="Assets\Scripts\MapScriptCameraMovement.cs" />

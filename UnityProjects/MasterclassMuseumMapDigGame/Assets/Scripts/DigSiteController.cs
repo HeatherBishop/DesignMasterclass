@@ -2,19 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class DigSiteController : MonoBehaviour {
-    public MapScriptCameraMovement CamMovement;
+    
     public CreateNewItem myArtifact;
+
     SpriteRenderer myRenderer;
     Sprite OriginalSprite;
     Vector2 OriginalScale;
+    int dig =6;
 
     private void Start()
     {
         myRenderer = GetComponent<SpriteRenderer>();
         OriginalSprite = myRenderer.sprite;
         OriginalScale = new Vector2(transform.localScale.x,transform.localScale.y);
-        CamMovement = FindObjectOfType<MapScriptCameraMovement>();
+        
     }
 
     public void UpdateSprite()
@@ -27,17 +30,23 @@ public class DigSiteController : MonoBehaviour {
     {
         transform.localScale = OriginalScale;
         myRenderer.sprite = OriginalSprite;
+        dig = 6;
     }
 
     static IEnumerator UpdateUI(CreateNewItem artifact) {
+        
         yield return new WaitForSeconds(1);
+
         //call UI stuff
     }
 
     private void OnMouseDown()
     {
-        UpdateSprite();
-        StartCoroutine(UpdateUI(myArtifact));
-        CamMovement.enabled = false;
+        if(--dig == 0)
+        {
+            CanvasController.instance.StartQuestion(myArtifact);
+        }
+        //Dig particles
+        
     }
 }
