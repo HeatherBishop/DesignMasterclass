@@ -18,7 +18,6 @@ public class ArtifactController : MonoBehaviour {
             tempDigSite.myArtifact = artifact;
             digSites.Add(tempDigSite);
         }
-        ResetDigSites();
 	}
 
     void ResetDigSites()

@@ -11,6 +11,10 @@ public class CanvasController : MonoBehaviour {
     public Text Information;
     public MapScriptCameraMovement CamMovement;
     int correctAnswer = 0;
+    public GameObject questionCanvas;
+    public GameObject informationCanvas;
+    public GameObject goToMapButton;
+    public GameObject seeInfoButton;
 
     public static CanvasController instance;
     // Use this for initialization
@@ -26,12 +30,15 @@ public class CanvasController : MonoBehaviour {
         {
             Destroy(this);
         }
+        questionCanvas.SetActive(false);
+        informationCanvas.SetActive(false);
         CamMovement = FindObjectOfType<MapScriptCameraMovement>();
     }
 
 
     public void StartQuestion(CreateNewItem artifact)
     {
+        questionCanvas.SetActive(true);
         CamMovement.enabled = false;
         Question.text = artifact.question;
         Answer1.text = artifact.answers[0];
@@ -40,6 +47,8 @@ public class CanvasController : MonoBehaviour {
         Answer4.text = artifact.answers[3];
         Information.text = artifact.itemInfo;
         correctAnswer = artifact.correctAnswer;
+        goToMapButton.SetActive(false);
+        seeInfoButton.SetActive(false);
     }
 
     public void Button1()
@@ -68,11 +77,27 @@ public class CanvasController : MonoBehaviour {
     {
         if (givenAnswer == correctAnswer)
         {
-
+            goToMapButton.SetActive(true);
+            seeInfoButton.SetActive(true);
+            BackToMap();
         }
 
         else {
-
+            GoToInfo();
+            //say wrong
         }
+    }
+
+    public void GoToInfo()
+    {
+        questionCanvas.SetActive(false);
+        informationCanvas.SetActive(true);
+    }
+
+    public void BackToMap()
+    {
+        questionCanvas.SetActive(false);
+        informationCanvas.SetActive(false);
+        CamMovement.enabled = true;
     }
 }
