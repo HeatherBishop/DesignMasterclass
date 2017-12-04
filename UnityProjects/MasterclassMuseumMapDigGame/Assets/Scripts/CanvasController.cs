@@ -79,7 +79,6 @@ public class CanvasController : MonoBehaviour {
         {
             goToMapButton.SetActive(true);
             seeInfoButton.SetActive(true);
-            BackToMap();
         }
 
         else {

@@ -44,6 +44,7 @@ public class DigSiteController : MonoBehaviour {
     {
         if(--dig == 0)
         {
+            UpdateSprite();
             CanvasController.instance.StartQuestion(myArtifact);
         }
         //Dig particles

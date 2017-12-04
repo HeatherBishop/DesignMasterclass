@@ -14,8 +14,8 @@ MonoBehaviour:
   itemName: tempSceptorName
   position: {x: 10, y: 0}
   sprite: {fileID: 21300000, guid: d1837114466172640b4dd3fcda84fa88, type: 3}
-  scale: {x: 1, y: 1}
-  question: how am i
+  scale: {x: 0.2, y: 0.2}
+  question: Answer is D
   answers:
   - a
   - b
