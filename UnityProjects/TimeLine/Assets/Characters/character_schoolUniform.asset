@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d7f61ede033d947a488f6c66aa4a2b, type: 3}
+  m_Name: character_schoolUniform
+  m_EditorClassIdentifier: 
+  characterName: School Uniform
+  MapLocation: IP3
+  position: {x: 0, y: 0}
+  sprite: {fileID: 21300000, guid: 121d4d29f806ba2468f3da5957039a34, type: 3}
+  scale: {x: 0, y: 0}
+  year: 2000
+  itemInfo: The making of most towns had a lot to do with education. Holywells High
+    has now become Ipswich Academy. Did you attend this school? How similar was your
+    uniform to this? Which teachers made a real difference to you?

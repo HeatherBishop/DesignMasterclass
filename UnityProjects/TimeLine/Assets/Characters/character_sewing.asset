@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d7f61ede033d947a488f6c66aa4a2b, type: 3}
+  m_Name: character_sewing
+  m_EditorClassIdentifier: 
+  characterName: Seamstress
+  MapLocation: IP3
+  position: {x: 0, y: 0}
+  sprite: {fileID: 21300000, guid: d15841c071218154e9a7744b65d528f2, type: 3}
+  scale: {x: 0, y: 0}
+  year: 1994
+  itemInfo: Local lady Jean Patterson was born in 1924 and was 70 years old when she
+    made this to celebrate her 50th Wedding anniversary. It features the words "Jean
+    and Ted, 1944-1994". This is one of several items we have in the collection made
+    by Mrs Patterson. What have you made to celebrate or remember a special occasion?

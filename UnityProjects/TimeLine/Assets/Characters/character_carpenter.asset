@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d7f61ede033d947a488f6c66aa4a2b, type: 3}
+  m_Name: character_carpenter
+  m_EditorClassIdentifier: 
+  characterName: Carpenter
+  MapLocation: IP4
+  position: {x: 0, y: 0}
+  sprite: {fileID: 21300000, guid: 9498d52b033130c4abeca0404e47cd8c, type: 3}
+  scale: {x: 0, y: 0}
+  year: 1844
+  itemInfo: The ancient Customs House had a sheltered walkway decorated with carved
+    wooden beams, where sailors could rest and wait. The spandrels all show a lion
+    at one end and a unicorn at the other, which are symbols of the United Kingdom
+    (The Lion is England and the Unicorn is Scotland). Which symbols do you use to
+    give messages to others about you?
