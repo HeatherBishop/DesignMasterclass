@@ -94,7 +94,7 @@ public class TimelineManager : MonoBehaviour
     void GetYearPositions()
     {
         int points = 0;
-        for(int i = MinYear; i < MaxYear; i+= 10)
+        for(int i = MinYear; i < MaxYear; i+= 20)
         {
             points++;
         }
@@ -102,14 +102,14 @@ public class TimelineManager : MonoBehaviour
         Vector2 nextPoint = new Vector2(-cameraHorizontalExtent + 1, timelineYPos);
         for(int i = 0; i < points; i++)
         {
-            int currentYear = MinYear + (10 * i);
+            int currentYear = MinYear + (20 * i);
             YearPositionPairs.Add(currentYear, nextPoint);
             GameObject timelinePoint = Instantiate(timelineDot, nextPoint, Quaternion.identity) as GameObject;
             timelinePoint.transform.GetComponentInChildren<TextMesh>().text = currentYear.ToString();
             nextPoint.x += SpaceBetweenPoints;
         }
         allowedOffsetTolerance = SpaceBetweenPoints / 3; //for now just set the allowed offset to be 1/3 of the space between points (snapping to the closest decade)
-        incrementPerYear = SpaceBetweenPoints / 10;
+        incrementPerYear = SpaceBetweenPoints / 20;
 
     }
 
