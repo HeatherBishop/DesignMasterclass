@@ -34,7 +34,8 @@ public class TimelineManager : MonoBehaviour
 
     public int MinYear = 1800;
     public int MaxYear = 1950;
-
+    public float CharacterOffsetFromTimeline = 1.5f;
+    public int yearIncrement = 20;
 
     private float allowedOffsetTolerance; //the amount of allowed positional offset on the x position before a character is deemed "in the correct place"
     private float incrementPerYear;
@@ -94,7 +95,7 @@ public class TimelineManager : MonoBehaviour
     void GetYearPositions()
     {
         int points = 0;
-        for(int i = MinYear; i < MaxYear; i+= 20)
+        for(int i = MinYear; i < MaxYear; i+= yearIncrement)
         {
             points++;
         }
@@ -102,14 +103,21 @@ public class TimelineManager : MonoBehaviour
         Vector2 nextPoint = new Vector2(-cameraHorizontalExtent + 1, timelineYPos);
         for(int i = 0; i < points; i++)
         {
-            int currentYear = MinYear + (20 * i);
+            int currentYear = MinYear + (yearIncrement * i);
             YearPositionPairs.Add(currentYear, nextPoint);
+            //if we are not at the max year
+            if(i != points-1)
+            {
+                //then add in a year halfway between this and the next increment (to make it increments of 10 rather than 20 at current) 
+                YearPositionPairs.Add(currentYear + yearIncrement / 2, new Vector2(nextPoint.x + SpaceBetweenPoints / 2, nextPoint.y));
+            }
+
             GameObject timelinePoint = Instantiate(timelineDot, nextPoint, Quaternion.identity) as GameObject;
             timelinePoint.transform.GetComponentInChildren<TextMesh>().text = currentYear.ToString();
             nextPoint.x += SpaceBetweenPoints;
         }
-        allowedOffsetTolerance = SpaceBetweenPoints / 3; //for now just set the allowed offset to be 1/3 of the space between points (snapping to the closest decade)
-        incrementPerYear = SpaceBetweenPoints / 20;
+        allowedOffsetTolerance = SpaceBetweenPoints / 3; //for now just set the allowed offset to be 1/3 of the space between points
+        incrementPerYear = SpaceBetweenPoints / yearIncrement;
 
     }
 
@@ -133,6 +141,6 @@ public class TimelineManager : MonoBehaviour
     public Vector2 getOffsetToClosestDecade(int closestYear)
     {
         int offset = Mathf.Abs(closestYear - touchCont.FocusedObject.GetComponent<CharController>().CharInfo.year);
-        return new Vector2(incrementPerYear * offset,1);
+        return new Vector2(incrementPerYear * offset,CharacterOffsetFromTimeline);
     }
 }

@@ -16,12 +16,6 @@ public class CharController : MonoBehaviour {
     {
         startPos = transform.position;
     }
-    private Vector2 YearToPosition()
-    {
-        //convert the year to the position on the timeline
-        return Vector2.zero;
-
-    }
     public void ResetCharacter()
     {
         //reset to default
