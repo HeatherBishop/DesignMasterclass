@@ -11,11 +11,6 @@ public class CameraController : MonoBehaviour {
 
 	void Update () {
 
-
-
-
-
-
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, camXMin, camXMax),
                                          Mathf.Clamp(transform.position.y, camYMin, camYMax),
                                          transform.position.z);

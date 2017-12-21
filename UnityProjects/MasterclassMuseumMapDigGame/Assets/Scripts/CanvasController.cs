@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CanvasController : MonoBehaviour {
     public Text Question;
+    public Text QuestionInfo;
     public Text Answer1;
     public Text Answer2;
     public Text Answer3;
@@ -41,6 +42,7 @@ public class CanvasController : MonoBehaviour {
         questionCanvas.SetActive(true);
         CamMovement.enabled = false;
         Question.text = artifact.question;
+        QuestionInfo.text = artifact.questionInfo;
         Answer1.text = artifact.answers[0];
         Answer2.text = artifact.answers[1];
         Answer3.text = artifact.answers[2];

@@ -12,6 +12,7 @@ public class CreateNewItem : ScriptableObject {
 
 
     public string question;//question about the item
+    public string questionInfo;
     [SerializeField]
     public List<string> answers = new List<string>(4);//the 4 answers
     [Range(1,4)]
