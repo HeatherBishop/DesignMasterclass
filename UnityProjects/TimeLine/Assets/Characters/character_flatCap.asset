@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d7f61ede033d947a488f6c66aa4a2b, type: 3}
+  m_Name: character_flatCap
+  m_EditorClassIdentifier: 
+  characterName: Ridleys Flat Cap
+  MapLocation: IP1
+  position: {x: -3.5, y: 5}
+  sprite: {fileID: 21300000, guid: f2a419dd66cc8ca4a8f6d45caaf4a7a7, type: 3}
+  scale: {x: 0, y: 0}
+  year: 1930
+  itemInfo: "Around 80 years ago, most ordinary men would have worn a hat like this.
+    This one has a Ridley\u2019s label, in business until 1983. Which shops do you
+    remember visiting on trips to town?"

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d7f61ede033d947a488f6c66aa4a2b, type: 3}
+  m_Name: character_BlueCoat
+  m_EditorClassIdentifier: 
+  characterName: Carved Figure - Blue Coat Boy
+  MapLocation: IP2
+  position: {x: -3, y: -3.5}
+  sprite: {fileID: 21300000, guid: f2a419dd66cc8ca4a8f6d45caaf4a7a7, type: 3}
+  scale: {x: 0, y: 0}
+  year: 1910
+  itemInfo: "150 years ago, this carved wooden figure of a \u2018Bluecoat\u2019 boy
+    decorated the Christ\u2019s Hospital charity school for poor children. Ipswich
+    was one of the first towns to commit to providing shelter, food and education
+    for children in poverty. How does our community support its children and families
+    in need nowadays?"

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d7f61ede033d947a488f6c66aa4a2b, type: 3}
+  m_Name: character_theatre
+  m_EditorClassIdentifier: 
+  characterName: Theatre
+  MapLocation: IP4
+  position: {x: 9, y: 0.5}
+  sprite: {fileID: 21300000, guid: 409b68850627cb648aabd2a0bcd74255, type: 3}
+  scale: {x: 0, y: 0}
+  year: 1955
+  itemInfo: "The theatres and cinemas of Ipswich have always played a huge role in
+    the lives of local people, both as performance makers and as audiences. Many a
+    theatrical career has been launched in Ipswich, including those of Mary Ann Keeley
+    and David Garrick. These programmes were produced to give theatre-goers information
+    about storylines, cast and crew, but also feature local business adverts in return
+    for sponsorship, which tell us lots about the town\u2019s entrepreneurial past.
+    Which performances do you remember watching in Ipswich\u2019s theatres, cinemas
+    and stadiums? What memorabilia do you keep as a souvenir?"

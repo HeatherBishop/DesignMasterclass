@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Rope Maker
   MapLocation: IP4
-  position: {x: 1, y: 0}
+  position: {x: 5.2, y: -2}
   sprite: {fileID: 21300000, guid: 063df2828783f4349bae71630fa8a7a3, type: 3}
   scale: {x: 0, y: 0}
   year: 1850

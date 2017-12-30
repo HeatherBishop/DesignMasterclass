@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: School Uniform
   MapLocation: IP3
-  position: {x: -1, y: -1}
+  position: {x: 5.4, y: 5}
   sprite: {fileID: 21300000, guid: 121d4d29f806ba2468f3da5957039a34, type: 3}
   scale: {x: 0, y: 0}
   year: 2000
