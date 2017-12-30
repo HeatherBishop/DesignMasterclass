@@ -26,8 +26,9 @@ public class TimelineManager : MonoBehaviour
         }
     }
 
-    
-    int maxCorrectAnswers;
+    [Header("Number of Characters")]
+    public int maxCorrectAnswers;
+
     public int currentCorrectAnswers;
     private TouchController touchCont;
 
@@ -74,10 +75,19 @@ public class TimelineManager : MonoBehaviour
         if (!touchCont.FocusedObject) //if there isnt a focused game object, we no longer need to continue
             return;
 
+        //if the character is in the correct spot
         if (CheckCorrectPosition())
         {
+            //then set it to unmovable
             touchCont.FocusedObject.GetComponent<CharController>().moveable = false;
+            //and increase the correct answers
             currentCorrectAnswers++;
+            //if the current correct answers equals the number required
+            if(currentCorrectAnswers == maxCorrectAnswers)
+            {
+                //then load the win screen
+                SceneSelection.LoadWinScreen();
+            }
         }
 
 	}

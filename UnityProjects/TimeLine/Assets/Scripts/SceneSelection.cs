@@ -5,23 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class SceneSelection : MonoBehaviour {
 
-	//Possibly the laziest code you have ever seen.
-	//Dont judge me.
-	//PS thanks for commenting your code :P 
-
-
-	// Use this for initialization
-	void Start () {
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
 	//load main menu
-	public void LoadMainMenu()
+	public static void LoadMainMenu()
 	{
 		SceneManager.LoadScene ("menu", LoadSceneMode.Single);
 	}
@@ -30,13 +16,12 @@ public class SceneSelection : MonoBehaviour {
 
 	public void LoadMainScene()
 	{
-		SceneManager.LoadScene ("scene", LoadSceneMode.Single);
+		SceneManager.LoadScene ("Main", LoadSceneMode.Single);
 	} 
 
 	//load win screen
-	public void LoadWinScreen()
+	public static void LoadWinScreen()
 	{
 		SceneManager.LoadScene ("end", LoadSceneMode.Single);
 	}
-
 }

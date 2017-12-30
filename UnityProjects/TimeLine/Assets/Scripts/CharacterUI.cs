@@ -25,8 +25,8 @@ public class CharacterUI : MonoBehaviour {
     }
 
 
-    [SerializeField]
     public GameObject InfoPanel;
+    public GameObject DescriptionPanel;
 
     public CharController focusedChar;
 
@@ -44,7 +44,13 @@ public class CharacterUI : MonoBehaviour {
         {
             InfoPanel = GameObject.Find("CharacterInfoPanel");
             InfoPanel.SetActive(false);
+            DescriptionPanel = GameObject.Find("Item Description");
+            DescriptionPanel.SetActive(false);
         }
+    }
+    public void OnEnable()
+    {
+        TimeChecker.gameStartTime = Time.time;
     }
 
     private void Update()
@@ -73,6 +79,7 @@ public class CharacterUI : MonoBehaviour {
            { 
                 focusedChar = null;
                 InfoPanel.SetActive(false);
+                DescriptionPanel.SetActive(false);
            }
         }
         if (Input.GetKeyUp(KeyCode.Mouse0))
@@ -84,12 +91,13 @@ public class CharacterUI : MonoBehaviour {
         InfoPanel.transform.GetChild(0).GetComponent<Image>().sprite = focusedChar.CharInfo.sprite;
         InfoPanel.transform.GetChild(1).GetComponent<Text>().text = focusedChar.CharInfo.characterName;
         InfoPanel.transform.GetChild(2).GetComponent<Text>().text = focusedChar.CharInfo.MapLocation;
-        InfoPanel.transform.GetChild(4).GetChild(0).GetChild(0).GetComponent<Text>().text = focusedChar.CharInfo.itemInfo;
+        DescriptionPanel.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = focusedChar.CharInfo.itemInfo;
 
         
         ShowDate();
 
         InfoPanel.SetActive(true);
+        DescriptionPanel.SetActive(true);
     }
 
     public void ShowDate()
