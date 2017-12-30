@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\CharacterCreation.cs" />
      <Compile Include="Assets\Scripts\CharacterSpawner.cs" />
      <Compile Include="Assets\Scripts\CharacterUI.cs" />
+     <Compile Include="Assets\Scripts\SceneSelection.cs" />
      <Compile Include="Assets\Scripts\TimelineManager.cs" />
      <Compile Include="Assets\Scripts\TouchController.cs" />
  <Reference Include="UnityEngine.UI">
