@@ -963,6 +963,7 @@ GameObject:
   - component: {fileID: 761097973}
   - component: {fileID: 761097975}
   - component: {fileID: 761097974}
+  - component: {fileID: 761097976}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -1063,6 +1064,21 @@ MonoBehaviour:
   timelineYPos: -25
   timelineDot: {fileID: 1052226970810588, guid: a4bded92f73613f47bec6f73f6ace6d3,
     type: 2}
+--- !u!114 &761097976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 761097970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 174cb334b2d63db4887b623f894a7579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOutTime: 0
+  timeBetweenLastInputAndTimeout: 240
+  lastInputTime: 0
+  timeTakenText: {fileID: 0}
 --- !u!1 &766554457
 GameObject:
   m_ObjectHideFlags: 0

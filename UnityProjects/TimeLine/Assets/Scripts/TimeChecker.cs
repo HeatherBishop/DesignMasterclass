@@ -17,16 +17,23 @@ public class TimeChecker : MonoBehaviour {
 
     public static float gameStartTime;
 
-    [SerializeField]
-    private float timeBetweenLastInputAndTimeout = 240; //for now its set at 4 minutes to timeout
+    
+    public float timeBetweenLastInputAndTimeout = 240; //for now its set at 4 minutes to timeout
+    public float lastInputTime;
+
 
     [SerializeField]
     private Text timeTakenText;
 
     private void OnEnable()
     {
-        TimeTaken timeTaken = GetTimeTaken();
-        timeTakenText.text = "Time taken: " + timeTaken.Minutes + " Minutes and " + timeTaken.Seconds + "  Seconds"; 
+        if(timeTakenText != null)
+        {
+            TimeTaken timeTaken = GetTimeTaken();
+            timeTakenText.text = "Time taken: " + timeTaken.Minutes + " Minutes and " + timeTaken.Seconds + "  Seconds"; 
+        }
+        gameStartTime = Time.time;
+        lastInputTime = Time.time;
     }
 
 

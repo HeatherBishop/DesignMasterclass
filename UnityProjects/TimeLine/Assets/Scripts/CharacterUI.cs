@@ -48,10 +48,6 @@ public class CharacterUI : MonoBehaviour {
             DescriptionPanel.SetActive(false);
         }
     }
-    public void OnEnable()
-    {
-        TimeChecker.gameStartTime = Time.time;
-    }
 
     private void Update()
     {

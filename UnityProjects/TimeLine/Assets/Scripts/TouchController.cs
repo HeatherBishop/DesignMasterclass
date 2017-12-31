@@ -7,15 +7,27 @@ public class TouchController : MonoBehaviour {
     public GameObject FocusedObject;
     private Vector2 mouseOffset;
 
-   
+    private TimeChecker timeCheck;
+
+    public void Start()
+    {
+        timeCheck = GetComponent<TimeChecker>();
+    }
 
     // Update is called once per frame
     void Update ()
     {
     
+
+        if(Time.time >= timeCheck.lastInputTime + timeCheck.timeBetweenLastInputAndTimeout)
+        {
+            SceneSelection.LoadMainMenu();
+        }
+
         //touch start
         if(Input.GetMouseButtonDown(0))
         {
+            timeCheck.lastInputTime = Time.time;
             //find the gameobject we are dragging 
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if(hit.collider != null && hit.collider.tag == "Character")
