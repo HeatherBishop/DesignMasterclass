@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d7f61ede033d947a488f6c66aa4a2b, type: 3}
   m_Name: character_carpenter
   m_EditorClassIdentifier: 
-  characterName: Carpenter
+  characterName: Carved Oak Spandrel
   MapLocation: IP4
   position: {x: 4.2, y: -10}
   sprite: {fileID: 21300000, guid: 9498d52b033130c4abeca0404e47cd8c, type: 3}

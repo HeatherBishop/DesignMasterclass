@@ -6,6 +6,7 @@ using System.Linq;
 public class TimelineManager : MonoBehaviour
 {
 
+
     private static TimelineManager instance;
 
     public static TimelineManager Instance
@@ -25,6 +26,11 @@ public class TimelineManager : MonoBehaviour
             return instance;
         }
     }
+    public AudioSource correctClip;
+    public AudioSource incorrectClip;
+
+
+ 
 
     [Header("Number of Characters")]
     public int maxCorrectAnswers;
@@ -67,6 +73,8 @@ public class TimelineManager : MonoBehaviour
         cameraHorizontalExtent = cameraVerticalExtent * Screen.width / Screen.height;
         GetYearPositions();
 
+
+
     }
 	
 	// Update is called once per frame
@@ -82,6 +90,9 @@ public class TimelineManager : MonoBehaviour
             //then set it to unmovable
             //triggering this means that when lmb is no longer pressed, the touch controller will increase the score
             touchCont.FocusedObject.GetComponent<CharController>().moveable = false;
+
+
+            
         }
 
 	}
@@ -90,8 +101,15 @@ public class TimelineManager : MonoBehaviour
     bool CheckCorrectPosition()
     {
         int yearToCheck = FindClosest(touchCont.FocusedObject.GetComponent<CharController>().CharInfo.year);
+        
         if (Vector2.Distance(touchCont.FocusedObject.transform.position,YearPositionPairs[yearToCheck] + getOffsetToClosestDecade(yearToCheck)) <= allowedOffsetTolerance)
+        {
+
+            //play correct audio
+            correctClip.Play();
             return true;
+        }
+
         return false;
     }
 

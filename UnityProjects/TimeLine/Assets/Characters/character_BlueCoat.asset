@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d7f61ede033d947a488f6c66aa4a2b, type: 3}
   m_Name: character_BlueCoat
   m_EditorClassIdentifier: 
-  characterName: Carved Figure - Blue Coat Boy
+  characterName: Blue Coat Boy - Carved Figure
   MapLocation: IP2
   position: {x: -3, y: -10.5}
   sprite: {fileID: 21300000, guid: 690ce6c67b6831449bd8bd1bb9ba48a5, type: 3}

@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d7f61ede033d947a488f6c66aa4a2b, type: 3}
   m_Name: character_theatre
   m_EditorClassIdentifier: 
-  characterName: Theatre
+  characterName: Theatre Programmes and Playbill
   MapLocation: IP4
   position: {x: 9, y: -10.5}
   sprite: {fileID: 21300000, guid: 409b68850627cb648aabd2a0bcd74255, type: 3}

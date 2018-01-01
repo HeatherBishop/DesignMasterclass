@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneSelection : MonoBehaviour {
 
-
+    
 	//load main menu
 	public static void LoadMainMenu()
 	{
@@ -23,5 +23,6 @@ public class SceneSelection : MonoBehaviour {
 	public static void LoadWinScreen()
 	{
 		SceneManager.LoadScene ("end", LoadSceneMode.Single);
+        
 	}
 }
