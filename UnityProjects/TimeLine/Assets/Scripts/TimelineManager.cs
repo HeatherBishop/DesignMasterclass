@@ -75,19 +75,13 @@ public class TimelineManager : MonoBehaviour
         if (!touchCont.FocusedObject) //if there isnt a focused game object, we no longer need to continue
             return;
 
-        //if the character is in the correct spot
-        if (CheckCorrectPosition())
-        {
-            //then set it to unmovable
-            touchCont.FocusedObject.GetComponent<CharController>().moveable = false;
-            //and increase the correct answers
-            currentCorrectAnswers++;
-            //if the current correct answers equals the number required
-            if(currentCorrectAnswers == maxCorrectAnswers)
+      
+            //if the character is in the correct spot
+            if (CheckCorrectPosition())
             {
-                //then load the win screen
-                SceneSelection.LoadWinScreen();
-            }
+            //then set it to unmovable
+            //triggering this means that when lmb is no longer pressed, the touch controller will increase the score
+            touchCont.FocusedObject.GetComponent<CharController>().moveable = false;
         }
 
 	}

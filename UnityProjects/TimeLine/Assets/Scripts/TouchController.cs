@@ -60,7 +60,15 @@ public class TouchController : MonoBehaviour {
             {
                 int closestYear = TimelineManager.Instance.FindClosest(FocusedObject.GetComponent<CharController>().CharInfo.year);
                 FocusedObject.transform.position = TimelineManager.Instance.YearPositionPairs[closestYear] + TimelineManager.Instance.getOffsetToClosestDecade(closestYear);
-                
+
+                //and increase the correct answers
+                TimelineManager.Instance.currentCorrectAnswers++;
+                //if the current correct answers equals the number required
+                if (TimelineManager.Instance.currentCorrectAnswers == TimelineManager.Instance.maxCorrectAnswers)
+                {
+                    //then load the win screen
+                    SceneSelection.LoadWinScreen();
+                }
             }
 
                 FocusedObject = null;
