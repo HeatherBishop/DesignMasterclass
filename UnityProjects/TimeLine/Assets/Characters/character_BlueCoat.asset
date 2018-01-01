@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Carved Figure - Blue Coat Boy
   MapLocation: IP2
-  position: {x: -3, y: -3.5}
-  sprite: {fileID: 21300000, guid: f2a419dd66cc8ca4a8f6d45caaf4a7a7, type: 3}
+  position: {x: -3, y: -10.5}
+  sprite: {fileID: 21300000, guid: 690ce6c67b6831449bd8bd1bb9ba48a5, type: 3}
   scale: {x: 0, y: 0}
   year: 1910
   itemInfo: "150 years ago, this carved wooden figure of a \u2018Bluecoat\u2019 boy

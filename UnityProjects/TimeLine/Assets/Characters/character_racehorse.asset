@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Race Track Bell
   MapLocation: IP3
-  position: {x: 5.2, y: 3}
+  position: {x: 5.2, y: -7}
   sprite: {fileID: 21300000, guid: a833537349f930e48aacb28d2152c312, type: 3}
   scale: {x: 0, y: 0}
   year: 1710

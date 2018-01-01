@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Gardener
   MapLocation: IP3
-  position: {x: 8.7, y: 7.4}
+  position: {x: 6.7, y: -3.4}
   sprite: {fileID: 21300000, guid: 473f878546a8a944081e825c50fe9964, type: 3}
   scale: {x: 0, y: 0}
   year: 1884

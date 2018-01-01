@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Stone Age Tools
   MapLocation: IP1
-  position: {x: -5, y: 6.5}
-  sprite: {fileID: 21300000, guid: f2a419dd66cc8ca4a8f6d45caaf4a7a7, type: 3}
+  position: {x: -5, y: -3.5}
+  sprite: {fileID: 21300000, guid: cf24941af4e65be4da8f65ac1a83bc3b, type: 3}
   scale: {x: 0, y: 0}
   year: 0
   itemInfo: These multi-use tools were made and used by Stone Age people in Ipswich

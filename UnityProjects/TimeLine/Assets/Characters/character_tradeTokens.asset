@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Trade Tokens
   MapLocation: IP1
-  position: {x: -4.5, y: 2}
-  sprite: {fileID: 21300000, guid: f2a419dd66cc8ca4a8f6d45caaf4a7a7, type: 3}
+  position: {x: -4.5, y: -10}
+  sprite: {fileID: 21300000, guid: dd15b98993471ca46a790e7675460599, type: 3}
   scale: {x: 0, y: 0}
   year: 1617
   itemInfo: Metal tokens issued 400 years ago by local business people, for customers

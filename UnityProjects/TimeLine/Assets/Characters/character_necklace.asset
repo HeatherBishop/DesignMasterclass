@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Torcs
   MapLocation: IP2
-  position: {x: -13, y: -7}
-  sprite: {fileID: 21300000, guid: f2a419dd66cc8ca4a8f6d45caaf4a7a7, type: 3}
+  position: {x: -13, y: -17}
+  sprite: {fileID: 21300000, guid: 32532a58fa1efd749b3fb644b164e75e, type: 3}
   scale: {x: 0, y: 0}
   year: 900
   itemInfo: Five gold neck rings which are over 2000 years old. They are excellent

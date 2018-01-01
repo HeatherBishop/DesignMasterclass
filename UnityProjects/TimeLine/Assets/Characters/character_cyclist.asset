@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Colin Moss Cyclists
   MapLocation: IP2
-  position: {x: 0, y: 0}
-  sprite: {fileID: 21300000, guid: f2a419dd66cc8ca4a8f6d45caaf4a7a7, type: 3}
+  position: {x: -4, y: -7}
+  sprite: {fileID: 21300000, guid: 0ee9071860a0e224d91b8c24bb38a851, type: 3}
   scale: {x: 0, y: 0}
   year: 1957
   itemInfo: At the end of the working day 60 years ago, Ipswich would see huge waves

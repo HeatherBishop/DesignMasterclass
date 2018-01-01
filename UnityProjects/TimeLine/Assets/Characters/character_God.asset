@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Attis Plaque
   MapLocation: IP1
-  position: {x: -13, y: 6}
-  sprite: {fileID: 21300000, guid: f2a419dd66cc8ca4a8f6d45caaf4a7a7, type: 3}
+  position: {x: -13, y: -4}
+  sprite: {fileID: 21300000, guid: bf13bfd5b97fe3c4a8abc7dd6735e3d0, type: 3}
   scale: {x: 0, y: 0}
   year: 1000
   itemInfo: "A piece of black jet showing a relief image of the Greek god Attis. It

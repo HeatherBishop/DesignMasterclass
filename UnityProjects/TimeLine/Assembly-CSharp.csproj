@@ -51,8 +51,13 @@
      <Compile Include="Assets\Scripts\CharacterSpawner.cs" />
      <Compile Include="Assets\Scripts\CharacterUI.cs" />
      <Compile Include="Assets\Scripts\SceneSelection.cs" />
+     <Compile Include="Assets\Scripts\TimeChecker.cs" />
      <Compile Include="Assets\Scripts\TimelineManager.cs" />
      <Compile Include="Assets\Scripts\TouchController.cs" />
+     <None Include="Assets\Editor\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\Editor\ParticleSystems\ParticleSystemsGuidelines.txt" />
+     <None Include="Assets\Editor\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\Editor\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

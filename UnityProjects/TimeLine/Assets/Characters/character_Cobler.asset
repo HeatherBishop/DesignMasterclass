@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Cobbler Tools
   MapLocation: IP1
-  position: {x: -3, y: 1}
-  sprite: {fileID: 21300000, guid: f2a419dd66cc8ca4a8f6d45caaf4a7a7, type: 3}
+  position: {x: -3, y: -6}
+  sprite: {fileID: 21300000, guid: a5dff6bce19319e46a533d2340288bd3, type: 3}
   scale: {x: 0, y: 0}
   year: 1890
   itemInfo: "These shoes were made by Alderton\u2019s, a business which had its shop
