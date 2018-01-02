@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981354dac2e14774fb9647e3f7d1d459, type: 3}
+  m_Name: Gaumont theatre programmes
+  m_EditorClassIdentifier: 
+  itemName: Gaumont theatre programmes
+  position: {x: 0, y: 0}
+  sprite: {fileID: 21300000, guid: 094dca93210c63b44a3ddd0d980685e5, type: 3}
+  scale: {x: 0.01, y: 0.01}
+  question: "The Gaumont Theatre was located on St Helen\u2019s Street. The building
+    still exists but what is it currently known as?"
+  questionInfo: 
+  answers:
+  - Regent Theatre
+  - New Wolsey Theatre
+  - The Lyceum Theatre
+  - Odeon
+  correctAnswer: 1
+  itemInfo: The theatre was opened in 1929 and was known as the Ipswich Gaumont in
+    the 1970s and 1980s. It was one of the first UK theatres that was able to play
+    films with sound and has hosted many well known acts such as The Beatles, Jimi
+    Hendrix and Elvis Costello. The theatre was reopened in 1991 as the Regent Theatre
+    and currently hosts a variety of comedy, dance and music events from people such
+    as Ed Byrne, Jason Manford and Kim Wilde. Did you ever attend an event at the
+    Gaumont Theatre?

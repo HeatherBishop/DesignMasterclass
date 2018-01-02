@@ -942,8 +942,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Artifacts:
-  - {fileID: 11400000, guid: 687e190d74280084ebd2579d7e7b4d81, type: 2}
-  - {fileID: 11400000, guid: 687e190d74280084ebd2579d7e7b4d81, type: 2}
+  - {fileID: 11400000, guid: 71b7f97b4f7343f4db3dd9396a26e3eb, type: 2}
+  - {fileID: 11400000, guid: 07be946ea3332fb468c5b1f90a1e29c0, type: 2}
+  - {fileID: 11400000, guid: ac8647a09e990fb42a206c4c1becc914, type: 2}
+  - {fileID: 11400000, guid: 935c34e9d96c9a54bb385c298ebfe7ff, type: 2}
   DigSite: {fileID: 1866012048520006, guid: 7542f32bbbe676149a73cee07459148d, type: 2}
 --- !u!4 &1187154285
 Transform:

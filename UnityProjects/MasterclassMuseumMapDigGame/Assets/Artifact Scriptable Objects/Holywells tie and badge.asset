@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981354dac2e14774fb9647e3f7d1d459, type: 3}
+  m_Name: Holywells tie and badge
+  m_EditorClassIdentifier: 
+  itemName: Holywells tie and badge
+  position: {x: 0, y: 0}
+  sprite: {fileID: 21300000, guid: 0f85ab5885355464f9275db6c8115623, type: 3}
+  scale: {x: 0.01, y: 0.01}
+  question: "The tie and badge of Holywells High. The high school was renamed in 2010
+    \u2013 what is it currently known as?"
+  questionInfo: 
+  answers:
+  - Holywells Academy
+  - Ipswich Academy
+  - Ipswich High School
+  - Chantry Academy
+  correctAnswer: 2
+  itemInfo: Holywells High School became an academy in 2010. With the change of status,
+    a new name was also due and the school is now known as Ipswich Academy.  What
+    memories do you have of Holywells?
