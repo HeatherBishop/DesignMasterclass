@@ -46,3 +46,6 @@ TagManager:
   - name: forground
     uniqueID: 3708215035
     locked: 0
+  - name: canvas
+    uniqueID: 3052222833
+    locked: 0

@@ -49,7 +49,7 @@ public class TimelineManager : MonoBehaviour
 
     public float timelineYPos = -25; //the minimum y bound for the timeline
 
-  
+
 
 
 
@@ -72,7 +72,7 @@ public class TimelineManager : MonoBehaviour
         cameraVerticalExtent = Camera.main.orthographicSize;
         cameraHorizontalExtent = cameraVerticalExtent * Screen.width / Screen.height;
         GetYearPositions();
-
+     
 
 
     }
@@ -106,6 +106,7 @@ public class TimelineManager : MonoBehaviour
         {
 
             //play correct audio
+            touchCont.FocusedObject.GetComponent<SpriteRenderer>().color = Color.red;
             correctClip.Play();
             return true;
         }

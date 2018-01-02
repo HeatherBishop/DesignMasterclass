@@ -30,6 +30,9 @@ public class CharacterUI : MonoBehaviour {
 
     public CharController focusedChar;
 
+    //to activate/deactivate the instruction panel when the character panels are displayed
+    public GameObject instructionPanel;
+
     private void Awake()
     {
         if (instance == null)
@@ -46,6 +49,7 @@ public class CharacterUI : MonoBehaviour {
             InfoPanel.SetActive(false);
             DescriptionPanel = GameObject.Find("Item Description");
             DescriptionPanel.SetActive(false);
+            instructionPanel = GameObject.Find("InstructionText");
         }
     }
 
@@ -68,6 +72,7 @@ public class CharacterUI : MonoBehaviour {
                 {
                     focusedChar = hit.collider.GetComponent<CharController>();
                     GetCharacterInfo();
+                    instructionPanel.SetActive(false);
                 }
             }
             //otherwise wipe the focused character
@@ -76,6 +81,7 @@ public class CharacterUI : MonoBehaviour {
                 focusedChar = null;
                 InfoPanel.SetActive(false);
                 DescriptionPanel.SetActive(false);
+                instructionPanel.SetActive(true);
            }
         }
         if (Input.GetKeyUp(KeyCode.Mouse0))
