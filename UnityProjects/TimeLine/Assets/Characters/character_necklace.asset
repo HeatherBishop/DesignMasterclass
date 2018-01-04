@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Celtic Torcs (Necklace)
   MapLocation: IP2
-  position: {x: -13, y: -10}
+  position: {x: 3, y: -17}
   sprite: {fileID: 21300000, guid: 32532a58fa1efd749b3fb644b164e75e, type: 3}
   scale: {x: 0, y: 0}
   year: 900

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Ridleys Flat Cap
   MapLocation: IP1
-  position: {x: -3.5, y: -5}
+  position: {x: -8, y: -15}
   sprite: {fileID: 21300000, guid: 458da47ef80a73843b0793416d6bedca, type: 3}
   scale: {x: 0, y: 0}
   year: 1930

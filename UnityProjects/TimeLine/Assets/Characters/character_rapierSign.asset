@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Rapier Sign
   MapLocation: IP2
-  position: {x: -10, y: -13}
+  position: {x: -9, y: -4}
   sprite: {fileID: 21300000, guid: d7acbc669d906e141b8f6bf6f32e7bb3, type: 3}
   scale: {x: 0, y: 0}
   year: 1869

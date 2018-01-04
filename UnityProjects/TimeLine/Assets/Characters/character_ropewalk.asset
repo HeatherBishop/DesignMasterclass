@@ -13,12 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Rope Maker
   MapLocation: IP4
-  position: {x: 5.2, y: -12}
+  position: {x: 2, y: 3}
   sprite: {fileID: 21300000, guid: 063df2828783f4349bae71630fa8a7a3, type: 3}
   scale: {x: 0, y: 0}
   year: 1850
   itemInfo: A machine used to spin lots of thin lengths of cord into one thicker,
-    stronger rope, across quite big distances. The oldest rope walking area in the
-    town was in what it still known as Ropewalk, but there was also ropewalks on Wherstead
-    Road, London Road and Cliff Quay. Which machines make your life easier? Which
-    are still to be invented?
+    stronger rope, across quite big distances. Which machines make your life easier?
+    Which are still to be invented?

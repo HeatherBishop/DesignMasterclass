@@ -27,7 +27,7 @@ public class TimelineManager : MonoBehaviour
         }
     }
     public AudioSource correctClip;
-    public AudioSource incorrectClip;
+   
 
 
  
@@ -105,12 +105,13 @@ public class TimelineManager : MonoBehaviour
         if (Vector2.Distance(touchCont.FocusedObject.transform.position,YearPositionPairs[yearToCheck] + getOffsetToClosestDecade(yearToCheck)) <= allowedOffsetTolerance)
         {
 
-            //play correct audio
+            //change the colour of the Item Sprite (TouchCont) to red if it is close to the correct position.
+            //I have no idea how to turn it off if incorrect or the Reset Button is pressed. Sorry :( 
             touchCont.FocusedObject.GetComponent<SpriteRenderer>().color = Color.red;
             correctClip.Play();
             return true;
         }
-
+         
         return false;
     }
 

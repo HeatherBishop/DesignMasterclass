@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Roman Samanware Bowl
   MapLocation: IP2
-  position: {x: -6, y: -16}
+  position: {x: 0, y: 0}
   sprite: {fileID: 21300000, guid: 101c87d4366a72044a44ebe1530e53d3, type: 3}
   scale: {x: 0, y: 0}
   year: 1350

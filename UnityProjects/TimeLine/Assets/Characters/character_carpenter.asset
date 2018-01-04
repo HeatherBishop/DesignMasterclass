@@ -13,12 +13,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Carved Oak Spandrel
   MapLocation: IP4
-  position: {x: 4.2, y: -10}
+  position: {x: 3, y: 2}
   sprite: {fileID: 21300000, guid: 9498d52b033130c4abeca0404e47cd8c, type: 3}
   scale: {x: 0, y: 0}
   year: 1844
   itemInfo: The ancient Customs House had a sheltered walkway decorated with carved
     wooden beams, where sailors could rest and wait. The spandrels all show a lion
-    at one end and a unicorn at the other, which are symbols of the United Kingdom
-    (The Lion is England and the Unicorn is Scotland). Which symbols do you use to
-    give messages to others about you?
+    at one end and a unicorn at the other, which are symbols of the United Kingdom.  Which
+    symbols do you use to give messages to others about you?

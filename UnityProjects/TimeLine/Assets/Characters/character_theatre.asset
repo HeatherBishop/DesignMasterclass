@@ -13,15 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Theatre Programmes and Playbill
   MapLocation: IP4
-  position: {x: 9, y: -10.5}
+  position: {x: -4, y: -8}
   sprite: {fileID: 21300000, guid: 409b68850627cb648aabd2a0bcd74255, type: 3}
   scale: {x: 0, y: 0}
   year: 1955
-  itemInfo: "The theatres and cinemas of Ipswich have always played a huge role in
-    the lives of local people, both as performance makers and as audiences. Many a
-    theatrical career has been launched in Ipswich, including those of Mary Ann Keeley
-    and David Garrick. These programmes were produced to give theatre-goers information
-    about storylines, cast and crew, but also feature local business adverts in return
-    for sponsorship, which tell us lots about the town\u2019s entrepreneurial past.
-    Which performances do you remember watching in Ipswich\u2019s theatres, cinemas
-    and stadiums? What memorabilia do you keep as a souvenir?"
+  itemInfo: "These programmes were produced to give theatre-goers information about
+    storylines, cast and crew, but also feature local business adverts in return for
+    sponsorship, which tell us lots about the town\u2019s entrepreneurial past. \nWhich
+    performances do you remember watching in Ipswich\u2019s theatres, cinemas and
+    stadiums? "

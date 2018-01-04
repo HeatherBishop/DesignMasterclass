@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Cobbler Tools
   MapLocation: IP1
-  position: {x: -3, y: -6}
+  position: {x: 8, y: -3}
   sprite: {fileID: 21300000, guid: a5dff6bce19319e46a533d2340288bd3, type: 3}
   scale: {x: 0, y: 0}
   year: 1890

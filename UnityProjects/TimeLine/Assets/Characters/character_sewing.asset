@@ -13,11 +13,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Handmade Table Cloth
   MapLocation: IP3
-  position: {x: 6.4, y: -9}
+  position: {x: -7, y: 6}
   sprite: {fileID: 21300000, guid: d15841c071218154e9a7744b65d528f2, type: 3}
   scale: {x: 0, y: 0}
   year: 1994
   itemInfo: Local lady Jean Patterson was born in 1924 and was 70 years old when she
-    made this to celebrate her 50th Wedding anniversary. It features the words "Jean
-    and Ted, 1944-1994". This is one of several items we have in the collection made
-    by Mrs Patterson. What have you made to celebrate or remember a special occasion?
+    made this to celebrate her 50th Wedding anniversary. This is one of several items
+    we have in the collection made by Mrs Patterson. What have you made to celebrate
+    or remember a special occasion?

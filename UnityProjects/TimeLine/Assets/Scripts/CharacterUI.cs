@@ -33,6 +33,13 @@ public class CharacterUI : MonoBehaviour {
     //to activate/deactivate the instruction panel when the character panels are displayed
     public GameObject instructionPanel;
 
+    //to change the panel sprite based on the IP adress
+    public Sprite ip1Sprite;
+    public Sprite ip2Sprite;
+    public Sprite ip3Sprite;
+    public Sprite ip4Sprite;
+    public Sprite correctSprite;
+
     private void Awake()
     {
         if (instance == null)
@@ -97,7 +104,8 @@ public class CharacterUI : MonoBehaviour {
 
         
         ShowDate();
-
+        ChooseInfoSprite();
+       
         InfoPanel.SetActive(true);
         DescriptionPanel.SetActive(true);
     }
@@ -111,7 +119,34 @@ public class CharacterUI : MonoBehaviour {
         if (focusedChar.moveable)
             InfoPanel.transform.GetChild(3).GetComponent<Text>().text = string.Empty;
         else
+        {
+            
+           
             InfoPanel.transform.GetChild(3).GetComponent<Text>().text = focusedChar.CharInfo.year.ToString();
+        }
+           
+    }
+
+    public void ChooseInfoSprite()
+    {
+        if(focusedChar.CharInfo.MapLocation.Contains("IP1"))
+            {
+            correctSprite = ip1Sprite;
+        }
+        if (focusedChar.CharInfo.MapLocation.Contains("IP2"))
+            {
+            correctSprite = ip2Sprite;
+        }
+        if (focusedChar.CharInfo.MapLocation.Contains("IP3"))
+            {
+            correctSprite = ip3Sprite;
+        }
+        if (focusedChar.CharInfo.MapLocation.Contains("IP4"))
+            {
+            correctSprite = ip4Sprite;
+        }
+        InfoPanel.GetComponent<Image>().sprite = correctSprite;
+        DescriptionPanel.GetComponent<Image>().sprite = correctSprite;
     }
 
 }
