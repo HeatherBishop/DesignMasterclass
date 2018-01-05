@@ -11,13 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d7f61ede033d947a488f6c66aa4a2b, type: 3}
   m_Name: character_DriverLicense
   m_EditorClassIdentifier: 
-  characterName: Penny Wash Drivers License
+  characterName: Pansy Wash Drivers License
   MapLocation: IP1
   position: {x: 0, y: -8}
   sprite: {fileID: 21300000, guid: 2d6162c1f5dd8a842ba763b5525a95aa, type: 3}
   scale: {x: 0, y: 0}
   year: 1945
-  itemInfo: "Penny was a heavy goods vehicle driver during the Second World War and
+  itemInfo: "Pansy was a heavy goods vehicle driver during the Second World War and
     this is her licence and speeding fine. There\u2019s also a reference recommending
     her for driving work once the war had ended. What\u2019s your earliest car-related
     memory?"
