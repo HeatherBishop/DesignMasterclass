@@ -17,7 +17,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 2d6162c1f5dd8a842ba763b5525a95aa, type: 3}
   scale: {x: 0, y: 0}
   year: 1945
-  itemInfo: "Pansy was a heavy goods vehicle driver during the Second World War and
+  itemInfo: "Penny was a heavy goods vehicle driver during the Second World War and
     this is her licence and speeding fine. There\u2019s also a reference recommending
     her for driving work once the war had ended. What\u2019s your earliest car-related
     memory?"
