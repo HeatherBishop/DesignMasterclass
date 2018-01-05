@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981354dac2e14774fb9647e3f7d1d459, type: 3}
+  m_Name: Caulking Hammer
+  m_EditorClassIdentifier: 
+  itemName: Caulking Hammer
+  position: {x: -6.67, y: -2.283}
+  sprite: {fileID: 21300000, guid: 1dccc3a5751489e46986d363021ee26c, type: 3}
+  scale: {x: 0.05, y: 0.05}
+  question: "This caulking hammer was used by \u2018Jack\u2019 Southgate during his
+    career at the Dock End Shipyard but what did he mostly use it for?"
+  questionInfo: 
+  answers:
+  - House construction.
+  - Demolishing concrete.
+  - Waterproofing boats.
+  - Building furniture.
+  correctAnswer: 3
+  itemInfo: This caulking hammer was used to waterproof boats. Shipbuilding was a
+    very crucial part of the success of Ipswich which has had an active port for hundreds
+    of years. The Royal Navy also commissioned Ipswich yards to build fleets using
+    Suffolk oak trees for many years.

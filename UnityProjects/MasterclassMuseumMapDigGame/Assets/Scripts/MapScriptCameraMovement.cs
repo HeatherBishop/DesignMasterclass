@@ -110,8 +110,8 @@ public class MapScriptCameraMovement : MonoBehaviour {
 }
 
     Vector3 GetMousePosition()
-    {
-        return Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+    {     
+        return Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position); 
     }
 
     private void OnDisable()

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981354dac2e14774fb9647e3f7d1d459, type: 3}
+  m_Name: Ridleys Flat Cap
+  m_EditorClassIdentifier: 
+  itemName: Ridleys Flat Cap
+  position: {x: -12.04, y: 12.94}
+  sprite: {fileID: 21300000, guid: a1bcaf133dd89774aa817d09d6f0bf2a, type: 3}
+  scale: {x: 0.05, y: 0.05}
+  question: "These flat caps were very popular around 80 years ago. This particular
+    one came from Ridley\u2019s. When did Ridley\u2019s stop operating?"
+  questionInfo: 
+  answers:
+  - 1975
+  - 1983
+  - 1987
+  - 1990
+  correctAnswer: 2
+  itemInfo: "Ridley\u2019s was located on Tavern Street and sold both men and women\u2019s
+    clothing & accessories. Alongside their clothing, Ridley\u2019s was also known
+    to contain a restaurant and a hairdressers.  Ridley\u2019s operated until 1983.
+    Did you ever visit Ridley\u2019s?"

@@ -10,7 +10,8 @@ public class DigSiteController : MonoBehaviour {
     SpriteRenderer myRenderer;
     Sprite OriginalSprite;
     Vector2 OriginalScale;
-    int dig =6;
+    int dig =4;
+    [SerializeField]
 
     private void Start()
     {
@@ -30,18 +31,21 @@ public class DigSiteController : MonoBehaviour {
     {
         transform.localScale = OriginalScale;
         myRenderer.sprite = OriginalSprite;
-        dig = 6;
+        dig = 4;
     }
 
-    static IEnumerator UpdateUI(CreateNewItem artifact) {
-        
-        yield return new WaitForSeconds(1);
-
-        //call UI stuff
-    }
 
     private void OnMouseDown()
     {
+        if (dig < 0 || CanvasController.instance.questionCanvas.activeSelf || CanvasController.instance.informationCanvas.activeSelf)
+        {
+            Debug.Log("AAAAAa");
+            return;
+        }
+        Debug.Log("YAYAY");
+        Debug.Log(dig);
+        CanvasController.instance.PlayParticleSystem(dig-1,transform.position);
+        Debug.Log("YAYAY");
         if(--dig == 0)
         {
             UpdateSprite();

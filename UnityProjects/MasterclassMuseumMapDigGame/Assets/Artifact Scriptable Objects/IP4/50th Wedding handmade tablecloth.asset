@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981354dac2e14774fb9647e3f7d1d459, type: 3}
+  m_Name: 50th Wedding handmade tablecloth
+  m_EditorClassIdentifier: 
+  itemName: 50th Wedding handmade tablecloth
+  position: {x: 4.11, y: -10.51}
+  sprite: {fileID: 21300000, guid: 253d30cbef162934bb04840486cefa13, type: 3}
+  scale: {x: 0.05, y: 0.05}
+  question: "This wedding tablecloth was made by Jean Patterson. She was born in 1924
+    and made this commemorative piece at the age of 70. The tablecloth is decorated
+    with the words \u201CJean and Ted, 1944-1994\u201D. How long were Jean and Ted
+    married for?"
+  questionInfo: 
+  answers:
+  - 45 years
+  - 50 years
+  - 55 years
+  - 60 years
+  correctAnswer: 2
+  itemInfo: 'Miss Jean Patterson made this commemorative tablecloth to celebrate her
+    50th wedding anniversary with Ted. '

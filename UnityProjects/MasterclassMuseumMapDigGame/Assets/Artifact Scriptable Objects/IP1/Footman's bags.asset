@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981354dac2e14774fb9647e3f7d1d459, type: 3}
+  m_Name: Footman's bags
+  m_EditorClassIdentifier: 
+  itemName: Footman's bags
+  position: {x: -13.3, y: 14.85}
+  sprite: {fileID: 21300000, guid: 6587bf80d4e32c048b310fc3c2886a23, type: 3}
+  scale: {x: 0.05, y: 0.05}
+  question: "These are paper bags from Footman\u2019s -  a beloved store based in
+    the Buttermarket that was known for selling a variety of goods. The site is now
+    home to a new store selling clothing items, beauty products and much more \u2013
+    but which store is it?"
+  questionInfo: 
+  answers:
+  - New Look
+  - Boots
+  - Marks and Spencers
+  - Debenhams
+  correctAnswer: 4
+  itemInfo: "Footman\u2019s was a very popular shop in the Buttermarket and was founded
+    by Robert Footman. It was known to sell a wide variety of items, ranging from
+    furniture and different forms of groceries such as bread and cheese. Do you have
+    any memories of shopping at Footman\u2019s? What departments do you remember?"

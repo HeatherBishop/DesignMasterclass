@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981354dac2e14774fb9647e3f7d1d459, type: 3}
+  m_Name: Boss Hall Brooch
+  m_EditorClassIdentifier: 
+  itemName: Boss Hall Brooch
+  position: {x: -32.963, y: 21.432}
+  sprite: {fileID: 21300000, guid: ecb1950045ae83e4d9cc5fbc0a66d3a3, type: 3}
+  scale: {x: 0.05, y: 0.05}
+  question: The Boss Hall Brooch was found in the grave of an Anglo-Saxon Lady. How
+    old is the Boss Hall Brooch estimated to be?
+  questionInfo: 
+  answers:
+  - 1200 years old.
+  - 1400 years old.
+  - 1600 years old.
+  - 1800 years old.
+  correctAnswer: 3
+  itemInfo: The Boss Hall Brooch is estimated to be 1600 years old. It was found in
+    one of the richest graves to be found in Ipswich, as demonstrated by the golden
+    brooch set with hundreds of garnets found inside.

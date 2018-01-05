@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981354dac2e14774fb9647e3f7d1d459, type: 3}
+  m_Name: Rapier Sign
+  m_EditorClassIdentifier: 
+  itemName: Rapier Sign
+  position: {x: -10.413, y: -5.592}
+  sprite: {fileID: 21300000, guid: 82515b5be052d9d44bab89324a464ec9, type: 3}
+  scale: {x: 0.05, y: 0.05}
+  question: This sign is from the engineering firm Rapier. Ransomes and Rapier was
+    established at Waterside Works in Ipswich. What did they initially produce?
+  questionInfo: 
+  answers:
+  - Factory Machinery
+  - Cars
+  - Railway Equiptment
+  - Furniture
+  correctAnswer: 3
+  itemInfo: 'Ransomes and Rapier was founded in 1789 and started off their business
+    by producing railway equipment. The company later moved on to creating cranes
+    before they ultimately closed in 1987.  '

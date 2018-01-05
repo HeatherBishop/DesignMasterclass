@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981354dac2e14774fb9647e3f7d1d459, type: 3}
+  m_Name: Saxon ipswichware
+  m_EditorClassIdentifier: 
+  itemName: Saxon ipswichware
+  position: {x: -9.67, y: 11.45}
+  sprite: {fileID: 21300000, guid: 791e5a0e9b2d1ca4a94de0f443597840, type: 3}
+  scale: {x: 0.05, y: 0.05}
+  question: How did Saxons produce these incrediable items of pottery?
+  questionInfo: 
+  answers:
+  - Water bath.
+  - Camp fire.
+  - Air dry.
+  - Underground kilns.
+  correctAnswer: 4
+  itemInfo: Pottery production was a big deal in Saxon Ipswich, and the pots produced
+    in the town were renowned and traded throughout the country. Large amount of this
+    pottery were recovered from the kiln sites when Carr Street and Cox Lane were
+    developed into shops and housing. Which fashions and trends have you followed
+    over the years? What have you got that might be worth a fortune one day?

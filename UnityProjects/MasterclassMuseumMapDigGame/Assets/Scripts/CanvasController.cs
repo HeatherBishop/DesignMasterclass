@@ -16,6 +16,16 @@ public class CanvasController : MonoBehaviour {
     public GameObject informationCanvas;
     public GameObject goToMapButton;
     public GameObject seeInfoButton;
+    public GameObject Correct;
+    public GameObject Answer1GO;
+    public GameObject Answer2GO;
+    public GameObject Answer3GO;
+    public GameObject Answer4GO;
+    public GameObject Incorrect;
+    public int DigSitesLeft = 19;
+    public GameObject Reset;
+    public GameObject FinishScreen;
+    public ParticleSystem[] Particles;
 
     public static CanvasController instance;
     // Use this for initialization
@@ -31,6 +41,7 @@ public class CanvasController : MonoBehaviour {
         {
             Destroy(this);
         }
+        FinishScreen.SetActive(false);
         questionCanvas.SetActive(false);
         informationCanvas.SetActive(false);
         CamMovement = FindObjectOfType<MapScriptCameraMovement>();
@@ -39,10 +50,16 @@ public class CanvasController : MonoBehaviour {
 
     public void StartQuestion(CreateNewItem artifact)
     {
+        Reset.SetActive(false);
+        DigSitesLeft--;
         questionCanvas.SetActive(true);
         CamMovement.enabled = false;
         Question.text = artifact.question;
-        QuestionInfo.text = artifact.questionInfo;
+        //QuestionInfo.text = artifact.questionInfo;
+        Answer1GO.SetActive(true);
+        Answer2GO.SetActive(true);
+        Answer3GO.SetActive(true);
+        Answer4GO.SetActive(true);
         Answer1.text = artifact.answers[0];
         Answer2.text = artifact.answers[1];
         Answer3.text = artifact.answers[2];
@@ -51,6 +68,7 @@ public class CanvasController : MonoBehaviour {
         correctAnswer = artifact.correctAnswer;
         goToMapButton.SetActive(false);
         seeInfoButton.SetActive(false);
+        Correct.SetActive(false);
     }
 
     public void Button1()
@@ -81,10 +99,18 @@ public class CanvasController : MonoBehaviour {
         {
             goToMapButton.SetActive(true);
             seeInfoButton.SetActive(true);
+            Correct.SetActive(true);
+            Question.text = "";
+            Answer1GO.SetActive(false);
+            Answer2GO.SetActive(false);
+            Answer3GO.SetActive(false);
+            Answer4GO.SetActive(false);
+            Incorrect.SetActive(false);
         }
 
         else {
             GoToInfo();
+            Incorrect.SetActive(true);
             //say wrong
         }
     }
@@ -99,6 +125,19 @@ public class CanvasController : MonoBehaviour {
     {
         questionCanvas.SetActive(false);
         informationCanvas.SetActive(false);
-        CamMovement.enabled = true;
+        if (DigSitesLeft == 0) {
+            FinishScreen.SetActive(true);
+        }
+        else
+        {
+            CamMovement.enabled = true;
+            Reset.SetActive(true);
+        }
+    }
+
+
+    public void PlayParticleSystem(int array, Vector2 position) {
+        Particles[array].transform.position = position;
+        Particles[array].Play();
     }
 }

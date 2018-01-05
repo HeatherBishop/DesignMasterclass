@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981354dac2e14774fb9647e3f7d1d459, type: 3}
+  m_Name: The Ipswich Torcs
+  m_EditorClassIdentifier: 
+  itemName: 'The Ipswich Torcs '
+  position: {x: -42.44, y: -9.87}
+  sprite: {fileID: 21300000, guid: 00d9d75b70cce6742937101f23fe62d8, type: 3}
+  scale: {x: 0.05, y: 0.05}
+  question: "These Torcs demonstrate the skill and craftsmanship of people in Britain.
+    These decorative neck rings were found in 1968 \u2013 what are they made from?"
+  questionInfo: 
+  answers:
+  - Iron
+  - Gold
+  - Silver
+  - Copper
+  correctAnswer: 2
+  itemInfo: These Torcs are made from gold and are estimated to be over 2000 years
+    old.

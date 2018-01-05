@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981354dac2e14774fb9647e3f7d1d459, type: 3}
+  m_Name: Carved Blue Coat Boy figure
+  m_EditorClassIdentifier: 
+  itemName: Carved Blue Coat Boy figure
+  position: {x: -10.489, y: 0.462}
+  sprite: {fileID: 21300000, guid: 5992ea21d154ec04d997a615ed9a39e2, type: 3}
+  scale: {x: 0.05, y: 0.05}
+  question: "This carved figure decorated Christ\u2019s Hospital Charity school for
+    poor children 150 years ago. Where was the school located?"
+  questionInfo: 
+  answers:
+  - 11 Wherstead Road
+  - 13 Wherstead Road
+  - 15 Wherstead Road
+  - 17 Wherstead Road
+  correctAnswer: 3
+  itemInfo: "Christ\u2019s Hospital Charity School was located at 15 Wherstead Road.
+    This school demonstrates how Ipswich was commited to providing shelter, food and
+    education for children in poverty. "

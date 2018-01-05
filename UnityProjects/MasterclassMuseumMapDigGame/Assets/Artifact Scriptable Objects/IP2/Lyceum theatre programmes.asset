@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981354dac2e14774fb9647e3f7d1d459, type: 3}
+  m_Name: Lyceum theatre programmes
+  m_EditorClassIdentifier: 
+  itemName: Lyceum theatre programmes
+  position: {x: -9.35, y: 11.94}
+  sprite: {fileID: 21300000, guid: 4d4822f8104b73d4b8f3f6951708df26, type: 3}
+  scale: {x: 0.05, y: 0.05}
+  question: The Lyceum theatre was an important part of the entertainment scene in
+    Ipswich and was opened in Carr Street in 1891. It was demolished in the late 1980s
+    but do you know what building currently stands in its past location?
+  questionInfo: 
+  answers:
+  - Debenhams
+  - WHSmiths
+  - Peacocks
+  - Argos
+  correctAnswer: 3
+  itemInfo: 'The Lyceum theatre was opened in 1891 and was designed by Walter Emden.
+    Walter Emden also designed The Royal Court Theatre in London which is still open
+    to this day. The Lyceum theatre started off its life as a drama theatre and later
+    began to screen films and eventually became a full-time cinema after World War
+    1 until the 1930s. It eventually closed and was converted into a department store
+    before being demolished in the late 1980s. '

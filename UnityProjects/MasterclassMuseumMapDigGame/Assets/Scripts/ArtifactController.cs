@@ -20,11 +20,15 @@ public class ArtifactController : MonoBehaviour {
         }
 	}
 
-    void ResetDigSites()
+    public void ResetDigSites()
     {
         foreach  (DigSiteController site in digSites)
         {
             site.ResetSprite();
         }
+
+        CanvasController.instance.DigSitesLeft = 19;
+        CanvasController.instance.FinishScreen.SetActive(false);
+        FindObjectOfType<MapScriptCameraMovement>().enabled = true;
     }
 }
